@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+:root{
+    --yelow: #FFB100;
+    --white1:#EEF8F6;
+    --blue: #14213D;
+    --red: #850000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+#Contact-section .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 10px;
+}
+
+#Contact-section .container .content > h1{
+    color: var(--blue);
+    font-weight: 800;
+    font-size: 65px;
+    line-height: 98px;
+    border: 1px solid #FFFEFE;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    /* margin-block: 3rem; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#Contact-section .container .content > h1 span{
+    color: var(--yelow);
+}
+
+#Contact-section .container .box {
+    /* width: 1245px;  */
+    border: 1px solid var(--blue);
+    border-radius: 30px;
+    /* padding: 55px 60px; */
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center; 
+    margin-bottom: 0px;
+}
+
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FFB100 inset !important;
+}
+form input::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder{
+    font-weight: 600;
+    font-size: bold;
+    color: var(--blue);
+    color: var(--blue);
+}
+
+label{
+    color: var(--blue);
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 60px; */
+}
+
+.name label{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: var(--red)
+}
+
+.email label{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: var(--red)
+}
+
+.subject label{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: var(--red)
+}
+
+.massage label{
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5px;
+    color: var(--red)
+}
+
+.error {
+    color: var(--red);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.gender .error {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.success {
+    color: green;
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+
+form .name > input {
+    width: 350px;
+    height: 58px;
+    padding: 10px;
+    border: 2px solid var(--white1);
+    background-color: var(--yelow);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+form .email > input {
+    width: 350px;
+    height: 58px;
+    padding: 10px;
+    border: 2px solid var(--white1);
+    background-color: var(--yelow);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+form .subject > input {
+    width: 350px;
+    /* 530 */
+    height: 58px;
+    padding: 10px;
+    border: 2px solid var(--white1);
+    background-color: var(--yelow);
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+
+form .submit  input {
+    width: 100px;
+    /* height: 89px; */
+    padding: 10px;
+    border: 2px solid var(--white1);
+    background-color: var(--yelow);
+    color: var(--biru);
+    border-radius: 25px;
+
+    font-weight: 600;
+    font-size: 20px;
+    /* line-height: 60px; */
+    text-align: center;
+    cursor: pointer;
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+}
+
+form .submit  input:hover {
+    color: var(--yelow);
+    background-color:var(--blue);
+    transition: 0.5s;
+}
+
+.container .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+    flex-direction: row;
+    margin-bottom: 56px;
+}
+
+.container .icon i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    font-size: 20px;
+    /* margin-bottom: 70px; */
+    cursor: pointer;
+    border: 3px solid var(--blue);
+    color: var(--blue);
+    border-radius: 100px ;
+    width: 50px;
+    height: 50px;
+}
+
+.container .icon i:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: center;
+    font-size: 36px;
+    /* margin-bottom: 70px; */
+    cursor: pointer;
+    border: 3px solid var(--yelow);
+    color: var(--yelow);
+    border-radius: 100px ;
+    width: 60px;
+    height: 60px;
+}
+
+
+oasdoipasjhroajdoasjdoasjdoajsr oadhjoashdshadohasodha sodhoashdo 
